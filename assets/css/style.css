@@ -1306,7 +1306,18 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-8: 12px;
 
   }
+    @media (max-width: 580px) {
+        .navbar {
+            position: relative; /* 不再固定在底部 */
+            bottom: auto;
+            border-radius: 12px; /* 调整圆角以适应非固定定位 */
+            background: var(--eerie-black-2); /* 可调整背景 */
+        }
 
+        main {
+            margin-bottom: 0; /* 移除多余的底部外边距 */
+        }
+    }
 
 
   /**
