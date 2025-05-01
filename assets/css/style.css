@@ -1263,7 +1263,21 @@ textarea.form-input::-webkit-resizer { display: none; }
         width: 60px; /* 缩小头像尺寸以适应 */
         height: 60px;
     }
+
+    /* 调整 Download CV 按钮的位置 */
+    .download-cv {
+        top: 150px; /* 根据需要调整按钮的上移或下移距离 */
+    }
+
+    .download-btn {
+        margin-top: 20px; /* 给按钮加一个上外边距，向下推 */
+    }
+
+    main {
+        padding-bottom: 60px; /* 确保正文底部不会被导航栏遮挡 */
+    }
 }
+
 
 /**
  * responsive larger than 450px screen
