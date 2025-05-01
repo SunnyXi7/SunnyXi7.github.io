@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "ionicons": "^7.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.25.1"
   }
 }

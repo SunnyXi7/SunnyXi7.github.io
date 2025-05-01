@@ -7,6 +7,13 @@
  * copyright 2022 @codewithsadee
  */
 
+.icon-box img {
+    width: 60%; /* 根據需要設置圖片寬度 */
+    height: auto; /* 自動調整高度，保持圖片的比例 */
+    object-fit: contain; /* 保持比例，並縮放至容器內 */
+    margin: 10px; /* 添加間距，讓圖片不貼著圖框 */
+}
+
 
 
 
@@ -301,9 +308,12 @@ article.active {
 \*-----------------------------------*/
 
 main {
-  margin: 15px 12px;
-  margin-bottom: 75px;
-  min-width: 259px;
+    margin: 0;
+    margin-right: 30px; /* 添加右边距，例如 30px */
+    padding: 0;
+    width: calc(100% - 30px); /* 调整宽度以适应右边距 */
+    min-width: calc(100% - 30px);
+    box-sizing: border-box;
 }
 
 
@@ -332,9 +342,18 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+    background: var(--bg-gradient-onyx);
+    border-radius: 28px; /* 放大圓角 */
+    width: 140px; /* 明確設置放大尺寸 */
+    height: 140px;
+    overflow: hidden; /* 防止圖片溢出 */
 }
+
+    .avatar-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* 確保圖片適應容器 */
+    }
 
 .info-content .name {
   color: var(--white-2);
@@ -498,10 +517,11 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
+    flex: 1;
+    color: var(--light-gray);
+    font-size: calc(var(--fs-6) * 1.2); /* 字體放大一倍 */
+    font-weight: var(--fw-300);
+    line-height: 1.6;
 }
 
 .about-text p { margin-bottom: 15px; }
@@ -512,9 +532,14 @@ main {
  * #service 
  */
 
-.service { margin-bottom: 35px; }
+.service {
+    margin-top: 120px; /* 新增上邊距，下移一段距離 */
+    margin-bottom: 35px;
+}
 
-.service-title { margin-bottom: 20px; }
+.service-title {
+    margin-bottom: 20px;
+}
 
 .service-list {
   display: grid;
@@ -1744,7 +1769,18 @@ textarea.form-input::-webkit-resizer { display: none; }
    * PORTFOLIO
    */
 
-  .project-list { grid-template-columns: repeat(3, 1fr); }
+
+    .portfolio .timeline {
+        margin-bottom: 30px;
+    }
+
+    .portfolio .timeline-list {
+        margin-left: 45px;
+    }
+
+    .portfolio .timeline-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
 
 
 
