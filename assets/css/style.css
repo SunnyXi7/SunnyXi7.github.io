@@ -1264,7 +1264,10 @@ textarea.form-input::-webkit-resizer { display: none; }
    * client
    */
 
-  .clients-item { min-width: calc(33.33% - 10px); }
+    .clients-item {
+        min-width: calc(33.33% - 10px);
+        min-height: 150px; /* 设置最小高度，避免缩小时过短 */
+    }
 
 
 
@@ -1272,8 +1275,11 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #PORTFOLIO, BLOG 
    */
 
-  .project-img,
-  .blog-banner-box { height: auto; }
+    .project-img,
+    .blog-banner-box {
+        height: auto;
+        min-height: 200px; /* 保证高度不会太短，可以根据需要调整 */
+    }
 
 }
 
@@ -1306,18 +1312,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-8: 12px;
 
   }
-    @media (max-width: 580px) {
-        .navbar {
-            position: relative; /* 不再固定在底部 */
-            bottom: auto;
-            border-radius: 12px; /* 调整圆角以适应非固定定位 */
-            background: var(--eerie-black-2); /* 可调整背景 */
-        }
 
-        main {
-            margin-bottom: 0; /* 移除多余的底部外边距 */
-        }
-    }
 
 
   /**
