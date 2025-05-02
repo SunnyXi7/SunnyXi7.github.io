@@ -309,12 +309,19 @@ article.active {
 
 main {
     margin: 0;
-    margin-right: 30px; /* 添加右边距，例如 30px */
     padding: 0;
-    width: calc(100% - 30px); /* 调整宽度以适应右边距 */
-    min-width: calc(100% - 30px);
     box-sizing: border-box;
 }
+
+/* 桌面端设置右边距 */
+@media (min-width: 768px) {
+    main {
+        margin-right: 30px;
+        width: calc(100% - 30px);
+        min-width: calc(100% - 30px);
+    }
+}
+
 
 
 
@@ -1282,8 +1289,8 @@ textarea.form-input::-webkit-resizer { display: none; }
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 20px; 
-        padding-right: 20px;
+        padding-left: 0px; 
+        padding-right: 0px;
     }
 }
 

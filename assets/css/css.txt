@@ -1254,6 +1254,41 @@ textarea.form-input::-webkit-resizer { display: none; }
   #RESPONSIVE
 \*-----------------------------------*/
 
+@media (max-width: 580px) {
+    .sidebar {
+        max-height: 80px;
+    }
+
+    .avatar-box {
+        width: 60px;
+        height: 60px;
+    }
+
+    .download-cv {
+        margin-top: 30px; 
+    }
+
+    main {
+        padding-bottom: 60px;
+    }
+
+    body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .main-content,
+    .container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px; 
+        padding-right: 0px;
+    }
+}
+
+
+
 /**
  * responsive larger than 450px screen
  */
