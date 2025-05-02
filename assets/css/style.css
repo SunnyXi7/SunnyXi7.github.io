@@ -1,4 +1,4 @@
-/*-----------------------------------*\
+ï»¿/*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
 
@@ -8,10 +8,10 @@
  */
 
 .icon-box img {
-    width: 60%; /* ¸ù“şĞèÒªÔOÖÃˆDÆ¬Œ’¶È */
-    height: auto; /* ×Ô„ÓÕ{Õû¸ß¶È£¬±£³ÖˆDÆ¬µÄ±ÈÀı */
-    object-fit: contain; /* ±£³Ö±ÈÀı£¬K¿s·ÅÖÁÈİÆ÷ƒÈ */
-    margin: 10px; /* Ìí¼Óég¾à£¬×ŒˆDÆ¬²»ÙNÖøˆD¿ò */
+    width: 60%; /* æ ¹æ“šéœ€è¦è¨­ç½®åœ–ç‰‡å¯¬åº¦ */
+    height: auto; /* è‡ªå‹•èª¿æ•´é«˜åº¦ï¼Œä¿æŒåœ–ç‰‡çš„æ¯”ä¾‹ */
+    object-fit: contain; /* ä¿æŒæ¯”ä¾‹ï¼Œä¸¦ç¸®æ”¾è‡³å®¹å™¨å…§ */
+    margin: 10px; /* æ·»åŠ é–“è·ï¼Œè®“åœ–ç‰‡ä¸è²¼è‘—åœ–æ¡† */
 }
 
 
@@ -309,9 +309,9 @@ article.active {
 
 main {
     margin: 0;
-    margin-right: 30px; /* Ìí¼ÓÓÒ±ß¾à£¬ÀıÈç 30px */
+    margin-right: 30px; /* æ·»åŠ å³è¾¹è·ï¼Œä¾‹å¦‚ 30px */
     padding: 0;
-    width: calc(100% - 30px); /* µ÷Õû¿í¶ÈÒÔÊÊÓ¦ÓÒ±ß¾à */
+    width: calc(100% - 30px); /* è°ƒæ•´å®½åº¦ä»¥é€‚åº”å³è¾¹è· */
     min-width: calc(100% - 30px);
     box-sizing: border-box;
 }
@@ -343,16 +343,16 @@ main {
 
 .avatar-box {
     background: var(--bg-gradient-onyx);
-    border-radius: 28px; /* ·Å´óˆA½Ç */
-    width: 140px; /* Ã÷´_ÔOÖÃ·Å´ó³ß´ç */
+    border-radius: 28px; /* æ”¾å¤§åœ“è§’ */
+    width: 140px; /* æ˜ç¢ºè¨­ç½®æ”¾å¤§å°ºå¯¸ */
     height: 140px;
-    overflow: hidden; /* ·ÀÖ¹ˆDÆ¬Òç³ö */
+    overflow: hidden; /* é˜²æ­¢åœ–ç‰‡æº¢å‡º */
 }
 
     .avatar-box img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* ´_±£ˆDÆ¬ßm‘ªÈİÆ÷ */
+        object-fit: cover; /* ç¢ºä¿åœ–ç‰‡é©æ‡‰å®¹å™¨ */
     }
 
 .info-content .name {
@@ -519,7 +519,7 @@ main {
 .about-text {
     flex: 1;
     color: var(--light-gray);
-    font-size: calc(var(--fs-6) * 1.2); /* ×Öów·Å´óÒ»±¶ */
+    font-size: calc(var(--fs-6) * 1.2); /* å­—é«”æ”¾å¤§ä¸€å€ */
     font-weight: var(--fw-300);
     line-height: 1.6;
 }
@@ -533,7 +533,7 @@ main {
  */
 
 .service {
-    margin-top: 120px; /* ĞÂÔöÉÏß…¾à£¬ÏÂÒÆÒ»¶Î¾àëx */
+    margin-top: 120px; /* æ–°å¢ä¸Šé‚Šè·ï¼Œä¸‹ç§»ä¸€æ®µè·é›¢ */
     margin-bottom: 35px;
 }
 
@@ -1256,39 +1256,37 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (max-width: 580px) {
     .sidebar {
-        max-height: 80px; /* ÊÖ»ú¶ËËõ¶Ì×´Ì¬¸ß¶È */
+        max-height: 80px;
     }
 
     .avatar-box {
-        width: 60px; /* ËõĞ¡Í·Ïñ³ß´çÒÔÊÊÓ¦ */
+        width: 60px;
         height: 60px;
     }
 
-    /* µ÷Õû Download CV °´Å¥µÄÎ»ÖÃ */
     .download-cv {
-        top: 190px; /* ¸ù¾İĞèÒªµ÷Õû°´Å¥µÄÉÏÒÆ»òÏÂÒÆ¾àÀë */
+        margin-top: 30px; 
     }
-
-   
 
     main {
-        padding-bottom: 60px; /* È·±£ÕıÎÄµ×²¿²»»á±»µ¼º½À¸ÕÚµ² */
+        padding-bottom: 60px;
     }
+
     body {
         padding-left: 16px;
         padding-right: 16px;
     }
 
-    .main-content, /* Ìæ»»³ÉÄãÊµ¼ÊÓÃµÄÖ÷ÄÚÈİÀàÃû */
+    .main-content,
     .container {
-        max-width: 100%; /* ²»ÏŞÖÆ¿í¶È */
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 10px; /* Ğ¡±ß¾à£¬²»»áÌ«Êİ */
-        padding-right: 10px;
-   
+        padding-left: 20px; 
+        padding-right: 20px;
     }
 }
+
 
 
 /**
@@ -1829,7 +1827,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-/* CVÏÂÔØ°´Å¥ÑùÊ½ */
+/* CVä¸‹è½½æŒ‰é’®æ ·å¼ */
 .download-cv {
     position: absolute;
     top: 80px;
