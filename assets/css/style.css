@@ -1266,12 +1266,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
     /* 调整 Download CV 按钮的位置 */
     .download-cv {
-        top: 150px; /* 根据需要调整按钮的上移或下移距离 */
+        top: 170px; /* 根据需要调整按钮的上移或下移距离 */
     }
 
-    .download-btn {
-        margin-top: 20px; /* 给按钮加一个上外边距，向下推 */
-    }
+   
 
     main {
         padding-bottom: 60px; /* 确保正文底部不会被导航栏遮挡 */
@@ -1285,8 +1283,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     .container {
         margin-left: auto;
         margin-right: auto;
-        padding-left: 16px;
-        padding-right: 16px;
     }
 }
 
