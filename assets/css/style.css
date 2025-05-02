@@ -1266,7 +1266,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
     /* 调整 Download CV 按钮的位置 */
     .download-cv {
-        top: 170px; /* 根据需要调整按钮的上移或下移距离 */
+        top: 190px; /* 根据需要调整按钮的上移或下移距离 */
     }
 
    
@@ -1284,8 +1284,8 @@ textarea.form-input::-webkit-resizer { display: none; }
         max-width: 100%; /* 不限制宽度 */
         margin-left: auto;
         margin-right: auto;
-        padding-left: 12px; /* 小边距，不会太瘦 */
-        padding-right: 12px;
+        padding-left: 10px; /* 小边距，不会太瘦 */
+        padding-right: 10px;
    
     }
 }
