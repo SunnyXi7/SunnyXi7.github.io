@@ -1279,10 +1279,14 @@ textarea.form-input::-webkit-resizer { display: none; }
         padding-right: 16px;
     }
 
-    .main-content, /* 或其他主要容器类名 */
+    .main-content, /* 替换成你实际用的主内容类名 */
     .container {
+        max-width: 100%; /* 不限制宽度 */
         margin-left: auto;
         margin-right: auto;
+        padding-left: 12px; /* 小边距，不会太瘦 */
+        padding-right: 12px;
+   
     }
 }
 
